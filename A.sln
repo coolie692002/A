@@ -1,0 +1,77 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Docs", "Docs", "{0DCB453B-A1AF-4EAA-BFFA-9224BB339A5D}"
+	ProjectSection(SolutionItems) = preProject
+		Docs\tsconfig.json = Docs\tsconfig.json
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Requests", "Requests", "{C7E0B2DA-67AE-4926-A73F-5A6220E8C843}"
+	ProjectSection(SolutionItems) = preProject
+		Requests\Auth.http = Requests\Auth.http
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution-Items", "Solution-Items", "{0E6010E0-5795-4A8C-86A1-FCC4388BF770}"
+	ProjectSection(SolutionItems) = preProject
+		.dockerignore = .dockerignore
+		.editorconfig = .editorconfig
+		.gitattributes = .gitattributes
+		.gitignore = .gitignore
+		.gitleaks.toml = .gitleaks.toml
+		Directory.Build.props = Directory.Build.props
+		Directory.Packages.props = Directory.Packages.props
+		docker-compose.override.yml = docker-compose.override.yml
+		Dockerfile = Dockerfile
+		README.md = README.md
+		global.json = global.json
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Src", "Src", "{1AA3D51C-AA48-4B47-86BF-367B6A8C2D84}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{74EAB863-0FEA-4B52-B4EB-F8F2E8E2FC5F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BuildingBlocks", "BuildingBlocks", "{473F4E49-C99C-4642-89A4-9D99819225EF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{15924A31-6660-4669-9952-EF978FA7B616}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ApiGateways", "ApiGateways", "{35B9ACDB-9058-4CC3-B6FD-E3B64F60CA9A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WebApp", "WebApp", "{09A37CBA-5289-4D01-A5D3-123BC10D2B14}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Identity", "Identity", "{591C0175-029F-4A2D-9608-2A5A62B79B6F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "A.Identity.Domain", "Src\Services\A.Identity.Domain\A.Identity.Domain.csproj", "{A5E06C04-8DE0-4AB8-ADA3-44EE6587771A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "A.Identity.Domain.Shared", "Src\Services\A.Identity.Domain.Shared\A.Identity.Domain.Shared.csproj", "{317A28C6-FFC7-4D8F-9FC4-5A33412F43E9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "A.SharedKernel", "Src\BuildingBlocks\A.SharedKernel\A.SharedKernel.csproj", "{C23693CB-274A-4D26-9598-7A0988FE161B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{473F4E49-C99C-4642-89A4-9D99819225EF} = {1AA3D51C-AA48-4B47-86BF-367B6A8C2D84}
+		{15924A31-6660-4669-9952-EF978FA7B616} = {1AA3D51C-AA48-4B47-86BF-367B6A8C2D84}
+		{35B9ACDB-9058-4CC3-B6FD-E3B64F60CA9A} = {1AA3D51C-AA48-4B47-86BF-367B6A8C2D84}
+		{09A37CBA-5289-4D01-A5D3-123BC10D2B14} = {1AA3D51C-AA48-4B47-86BF-367B6A8C2D84}
+		{591C0175-029F-4A2D-9608-2A5A62B79B6F} = {15924A31-6660-4669-9952-EF978FA7B616}
+		{A5E06C04-8DE0-4AB8-ADA3-44EE6587771A} = {591C0175-029F-4A2D-9608-2A5A62B79B6F}
+		{317A28C6-FFC7-4D8F-9FC4-5A33412F43E9} = {591C0175-029F-4A2D-9608-2A5A62B79B6F}
+		{C23693CB-274A-4D26-9598-7A0988FE161B} = {473F4E49-C99C-4642-89A4-9D99819225EF}
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A5E06C04-8DE0-4AB8-ADA3-44EE6587771A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5E06C04-8DE0-4AB8-ADA3-44EE6587771A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5E06C04-8DE0-4AB8-ADA3-44EE6587771A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5E06C04-8DE0-4AB8-ADA3-44EE6587771A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{317A28C6-FFC7-4D8F-9FC4-5A33412F43E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{317A28C6-FFC7-4D8F-9FC4-5A33412F43E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{317A28C6-FFC7-4D8F-9FC4-5A33412F43E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{317A28C6-FFC7-4D8F-9FC4-5A33412F43E9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C23693CB-274A-4D26-9598-7A0988FE161B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C23693CB-274A-4D26-9598-7A0988FE161B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C23693CB-274A-4D26-9598-7A0988FE161B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C23693CB-274A-4D26-9598-7A0988FE161B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
